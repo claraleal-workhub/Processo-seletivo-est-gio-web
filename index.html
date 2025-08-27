@@ -6,6 +6,57 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Formulário de Cadastro de Parceiros</h1>
+    <form action="-" method="post">
+        <p>
+            <label for="idpersonalidade">Personalidade: </label>
+            <input type="radio" name="personalidade" id="idpersonalidade" required> Física
+            <input type="radio" name="personalidade" id="idpersonalidade"> Jurídica
+        </p>
+        <p>
+            <label for="idrazaosocial">Razão Social: </label>
+            <input type="text" name="razaosocial" id="idrazaosocial" required>
+        </p>
+        <p>
+            <label for="idcadastro">CPF/CNPJ: </label>
+            <input type="text" name="cadastro" id="idcadastro" required>
+        </p>
+        <p>
+            <label for="idcep">CEP: </label>
+            <input type="text" name="cep" id="idcep" required placeholder="00000-000">
+        </p>
+        <p>
+            <label for="iduf">UF: </label>
+            <input type="text" name="uf" id="iduf" required>
+        </p>
+        <p>
+            <label for="idmunicipio">Município: </label>
+            <input type="text" name="municipio" id="idmunicipio" required>
+        </p>
+        <p>
+            <label for="idlogradouro">Logradouro: </label>
+            <input type="text" name="logradouro" id="idlogradouro" required>
+        </p>
+        <p>
+            <label for="idtelefone">Telefone: </label>
+            <input type="tel" name="telefone" id="idtelefone" required placeholder="(00) 0000-0000">
+        </p>
+        <p>
+            <label for="idbairro">Bairro: </label>
+            <input type="text" name="bairro" id="idbairro" required>
+        </p>
+        <p>
+            <label for="idemail">Email: </label>
+            <input type="email" name="email" id="idemail" required>
+        </p>
+        <p>
+            <label for="idcomplemento">Complemento: </label>
+            <input type="email" name="complemento" id="idcomplemento" required>
+        </p>
+        <p>
+            <label for="idobservacao">Observação:</label>
+            <textarea name="observacao" id="idobservacao" rows="3"></textarea>
+        </p>
+    </form>
 </body>
 </html>
