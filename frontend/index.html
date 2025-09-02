@@ -1,135 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="JS/script.js"></script>
-    
+
     <link rel="stylesheet" href="css/style.css">
-    
   </head>
 
-<body>
-
-  <header>
-    <img src="css/Imagens/logo acti.png" alt="acti-logo-atalho" id="logo">
-    <h1>Formulário de Cadastro de Parceiros</h1>
-  </header>
-  <main>
-    <form>
-    <section id="dados-cadastrais">
-    <h2>Dados Cadastrais</h2>
-  <p>
-    <label>Personalidade:</label>
-    <input type="radio" name="personalidade" value="fisica"> Física
-    <input type="radio" name="personalidade" value="juridica"> Jurídica
-  </p>
-
-  <p>
-    <label for="idrazaosocial">Nome/Razão Social:</label>
-    <input type="text" name="razaosocial" id="idrazaosocial" required>
-  </p>
-
-  <p>
-    <label for="idcadastro">CPF/CNPJ:</label>
-    <input type="text" name="cadastro" id="idcadastro" required>
-  </p>
-</section>
-<section id="contato">
-    <h2>Contato</h2>
-  <p>
-    <label for="idemail">E-mail:</label>
-    <input type="email" name="email" id="idemail" required>
-  </p>
-
-  <p>
-    <label for="idtelefone">Telefone:</label>
-    <input type="tel" name="telefone" id="idtelefone" required>
-  </p>
-</section>
-<section id="endereco">
-    <h2>Endereço</h2>
-  <p>
-    <label for="idcep">CEP:</label>
-    <input type="text" name="cep" id="idcep" required>
-  </p>
-
-  <p>
-    <label for="uf">UF:</label>
-  <select name="uf" id="uf" required>
-  <option value="">Selecione</option>
-  <option value="AC">Acre (AC)</option>
-  <option value="AL">Alagoas (AL)</option>
-  <option value="AP">Amapá (AP)</option>
-  <option value="AM">Amazonas (AM)</option>
-  <option value="BA">Bahia (BA)</option>
-  <option value="CE">Ceará (CE)</option>
-  <option value="DF">Distrito Federal (DF)</option>
-  <option value="ES">Espírito Santo (ES)</option>
-  <option value="GO">Goiás (GO)</option>
-  <option value="MA">Maranhão (MA)</option>
-  <option value="MT">Mato Grosso (MT)</option>
-  <option value="MS">Mato Grosso do Sul (MS)</option>
-  <option value="MG">Minas Gerais (MG)</option>
-  <option value="PA">Pará (PA)</option>
-  <option value="PB">Paraíba (PB)</option>
-  <option value="PR">Paraná (PR)</option>
-  <option value="PE">Pernambuco (PE)</option>
-  <option value="PI">Piauí (PI)</option>
-  <option value="RJ">Rio de Janeiro (RJ)</option>
-  <option value="RN">Rio Grande do Norte (RN)</option>
-  <option value="RS">Rio Grande do Sul (RS)</option>
-  <option value="RO">Rondônia (RO)</option>
-  <option value="RR">Roraima (RR)</option>
-  <option value="SC">Santa Catarina (SC)</option>
-  <option value="SP">São Paulo (SP)</option>
-  <option value="SE">Sergipe (SE)</option>
-  <option value="TO">Tocantins (TO)</option>
-</select>
-  </p>
-
-  <p>
-    <label for="idmunicipio">Município:</label>
-    <input type="text" name="municipio" id="idmunicipio" required>
-  </p>
-
-  <p>
-    <label for="idbairro">Bairro:</label>
-    <input type="text" name="bairro" id="idbairro" required>
-  </p>
-
-  <p>
-    <label for="idlogradouro">Logradouro:</label>
-    <input type="text" name="logradouro" id="idlogradouro" required>
-  </p>
-
-  <p>
-    <label for="idnumero">Número:</label>
-    <input type="text" name="numero" id="idnumero" required>
-  </p>
-
-  <p>
-    <label for="idcomplemento">Complemento (Opcional):</label>
-    <input type="text" name="complemento" id="idcomplemento">
-  </p>
-
-
-  <p>
-    <label for="idobservacao">Observação (Opcional):</label>
-    <textarea name="observacao" id="idobservacao"></textarea>
-  </p></section>
-<div id="enviar">
-  <button type="submit">Enviar</button>
-  </div>
-</form>
-  </main>
-
-</body>
+  <body>
+    <header>
+      <a href="https://www.actidesenvolvimento.com.br" class="logo">
+        <img src="css/Imagens/logo acti.png" alt="acti-logo-atalho" id="imglogo">
+      </a>
+      <h1>Formulário de Cadastro de Parceiros</h1>
+    </header>
+    <main>
+      <form>
+        <section id="dados-cadastrais">
+          <h2>Dados Cadastrais</h2>
+          <p>
+            <label>Personalidade:</label>
+            <input type="radio" name="personalidade" value="fisica"> Física
+            <input type="radio" name="personalidade" value="juridica"> Jurídica
+          </p>
+          <p>
+            <label for="idrazaosocial">Nome/Razão Social:</label>
+            <input type="text" name="razaosocial" id="idrazaosocial" required>
+          </p>
+          <p>
+            <label for="idcadastro">CPF/CNPJ:</label>
+            <input type="text" name="cadastro" id="idcadastro" required>
+          </p>
+        </section>
+        <section id="contato">
+          <h2>Contato</h2>
+          <p>
+            <label for="idemail">E-mail:</label>
+            <input type="email" name="email" id="idemail" required>
+          </p>
+          <p>
+            <label for="idtelefone">Telefone:</label>
+            <input type="tel" name="telefone" id="idtelefone" required>
+          </p>
+        </section>
+        <section id="endereco">
+          <h2>Endereço</h2>
+          <p>
+            <label for="idcep">CEP:</label>
+            <input type="text" name="cep" id="idcep" required>
+          </p>
+          <p>
+            <label for="uf">UF:</label>
+            <select name="uf" id="uf" required>
+              <option value="">Selecione</option>
+              <option value="AC">Acre (AC)</option>
+              <option value="AL">Alagoas (AL)</option>
+              <option value="AP">Amapá (AP)</option>
+              <option value="AM">Amazonas (AM)</option>
+              <option value="BA">Bahia (BA)</option>
+              <option value="CE">Ceará (CE)</option>
+              <option value="DF">Distrito Federal (DF)</option>
+              <option value="ES">Espírito Santo (ES)</option>
+              <option value="GO">Goiás (GO)</option>
+              <option value="MA">Maranhão (MA)</option>
+              <option value="MT">Mato Grosso (MT)</option>
+              <option value="MS">Mato Grosso do Sul (MS)</option>
+              <option value="MG">Minas Gerais (MG)</option>
+              <option value="PA">Pará (PA)</option>
+              <option value="PB">Paraíba (PB)</option>
+              <option value="PR">Paraná (PR)</option>
+              <option value="PE">Pernambuco (PE)</option>
+              <option value="PI">Piauí (PI)</option>
+              <option value="RJ">Rio de Janeiro (RJ)</option>
+              <option value="RN">Rio Grande do Norte (RN)</option>
+              <option value="RS">Rio Grande do Sul (RS)</option>
+              <option value="RO">Rondônia (RO)</option>
+              <option value="RR">Roraima (RR)</option>
+              <option value="SC">Santa Catarina (SC)</option>
+              <option value="SP">São Paulo (SP)</option>
+              <option value="SE">Sergipe (SE)</option>
+              <option value="TO">Tocantins (TO)</option>
+            </select>
+          </p>
+          <p>
+            <label for="idmunicipio">Município:</label>
+            <input type="text" name="municipio" id="idmunicipio" required>
+          </p>
+          <p>
+            <label for="idbairro">Bairro:</label>
+            <input type="text" name="bairro" id="idbairro" required>
+          </p>
+          <p>
+            <label for="idlogradouro">Logradouro:</label>
+            <input type="text" name="logradouro" id="idlogradouro" required>
+          </p>
+          <p>
+            <label for="idnumero">Número:</label>
+            <input type="text" name="numero" id="idnumero" required>
+          </p>
+          <p>
+            <label for="idcomplemento">Complemento (Opcional):</label>
+            <input type="text" name="complemento" id="idcomplemento">
+          </p>
+          <p>
+            <label for="idobservacao">Observação (Opcional):</label>
+            <textarea name="observacao" id="idobservacao"></textarea>
+          </p>
+        </section>
+        <div id="enviar">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
