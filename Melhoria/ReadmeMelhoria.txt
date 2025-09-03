@@ -1,0 +1,2 @@
+Nessa versão decidi discutir com o copilot sobre como eu poderia melhorar os códigos do formulário. Esse diálogo me possibilitou enxergar de perspectivas diferentes e aprender um pouco mais em alguns detalhes. Fiquem a vontade para dar uma olhada nesse também!
+Att. Clara.
